@@ -11,7 +11,7 @@ Chạy lần luợt các lệnh sau (Clone repo về máy và chạy jekyll).
 ```
 $ git clone https://github.com/fatagroup/fatagroup.org.git
 $ cd fatagroup.org.git
-$ jekyll serve -w
+$ jekyll serve -w -b
 ```
 
 Truy cập website tại địa chỉ: http://0.0.0.0:4000
@@ -21,7 +21,7 @@ Deploy trên local, bận cần chạy những lệnh sau (Hãy chắc chắn đ
 ```
 $ npm install
 $ bower install
-gulp
+$ gulp
 ```
 
 ## Đóng góp
