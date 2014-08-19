@@ -1,6 +1,7 @@
 title:            FataGroup
 description:      Thiết kế website chuyên nghiệp
 url:              http://fatagroup.org
+baseurl:          /fatagroup.org
 
 owner:
   skype:          anhskohbo

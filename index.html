@@ -8,8 +8,8 @@ title: Thiết kế website chuyên nghiệp
         <div class="container">
             <header class="section-header">
                 <div class="site-logo">
-                    <a href="/" title="{{ site.title }}">
-                        <img src="/assets/img/logo.png">
+                    <a href="{{ site.baseurl }}/" title="{{ site.title }}">
+                        <img src="{{ site.baseurl }}/assets/img/logo.png">
                     </a>
                 </div>
 
@@ -29,7 +29,7 @@ title: Thiết kế website chuyên nghiệp
                 <div class="scroll-button hidden-md">
                     <div class="mouse">
                         <a href="#section-portfolio" class="smooth-scroll" title="Cuộn tiếp">
-                            <img src="assets/img/mouse.png">
+                            <img src="{{ site.baseurl }}/assets/img/mouse.png">
                         </a>
                     </div>
                 </div>
@@ -51,8 +51,8 @@ title: Thiết kế website chuyên nghiệp
                     {% for i in array %}
                     <div class="col-sm-3 col-xs-6">
                         <div class="project">
-                            <a href="/assets/img/projects/your-project.jpg" class="project-thumbnail">
-                                <img src="/assets/img/projects/your-project.jpg">
+                            <a href="{{ site.baseurl }}/assets/img/projects/your-project.jpg" class="project-thumbnail">
+                                <img src="{{ site.baseurl }}/assets/img/projects/your-project.jpg">
                                 <i class="fa fa-plus-circle"></i>
                             </a>
                             <h3 class="project-title">
@@ -77,26 +77,26 @@ title: Thiết kế website chuyên nghiệp
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        <img src="/assets/img/icons/best.png">
+                        <img src="{{ site.baseurl }}/assets/img/icons/best.png">
                         <h3>Chất lượng đẳng cấp quốc tế</h3>
                         <p>Chúng tôi luôn áp dụng những công nghệ và tiểu chuẩn web mới nhất cho những dự án của mình.</p>
                     </div>
 
                     <div class="col-md-4 col-sm-6">
-                        <img src="/assets/img/icons/money.png">
+                        <img src="{{ site.baseurl }}/assets/img/icons/money.png">
                         <h3>Giá cả hợp lý</h3>
                         <p>Chúng tôi không tính bằng đô la đâu! Bạn có thể thương lượng trước với chúng tôi về giá cả.
                         </p>
                     </div>
 
                     <div class="col-md-4 col-sm-6">
-                        <img src="/assets/img/icons/support.png">
+                        <img src="{{ site.baseurl }}/assets/img/icons/support.png">
                         <h3>Hỗ trợ 24/7</h3>
                         <p>Ngay cả khi dự án đã hoàn thành, chúng tôi sẵn sàng hỗ trợ những thắc mắc và giải quyết những vấn đề cho bạn.</p>
                     </div>
 
                     <div class="col-md-4 col-sm-6">
-                        <img src="/assets/img/icons/clock.png">
+                        <img src="{{ site.baseurl }}/assets/img/icons/clock.png">
                         <h3>Luôn đúng hạn</h3>
                         <p>
                             Bạn muốn có một website vào ngày thứ 2? Chúng tôi sẽ hoàn thành xong cho bạn vào ngày chủ nhật trước đó.
@@ -104,7 +104,7 @@ title: Thiết kế website chuyên nghiệp
                     </div>
 
                     <div class="col-md-4 col-sm-6">
-                        <img src="/assets/img/icons/light.png">
+                        <img src="{{ site.baseurl }}/assets/img/icons/light.png">
                         <h3>Đội ngũ sáng tạo</h3>
                         <p>
                             Những nhân viên của chúng tôi có một kiến thức chuyên sâu về lập trình và mạng. Hơn nữa, chúng tôi luôn đề cao sự sáng tạo.
@@ -112,7 +112,7 @@ title: Thiết kế website chuyên nghiệp
                     </div>
 
                     <div class="col-md-4 col-sm-6">
-                        <img src="/assets/img/icons/clipboard.png">
+                        <img src="{{ site.baseurl }}/assets/img/icons/clipboard.png">
                         <h3>Quản lý tiến độ</h3>
                         <p>
                             Bạn hoàn toàn có thể tham gia giám sát tiến độ công việc mọi lúc, mọi nơi thông qua chiếc smartphone hay máy tính cá nhân.
@@ -164,7 +164,7 @@ title: Thiết kế website chuyên nghiệp
                         {% for soft in site.data.software %}
                             <div class="banner-item">
                                 <a href="{{ soft.link }}" title="{{ soft.name }}">
-                                    <img src="{{ soft.image }}" alt="{{ soft.name }}">
+                                    <img src="{{ site.baseurl }}/{{ soft.image | trim: '/' }}" alt="{{ soft.name }}">
                                 </a>
                             </div>
                         {% endfor %}
@@ -215,7 +215,7 @@ title: Thiết kế website chuyên nghiệp
                     {% for our in site.data.team %}
                         <div class="owl-carousel-team-item">
                             <a class="team-avatar" href="{{ our.website }}" target="_blank">
-                                <img src="{{ our.avatar }}" class="img-circle" width="250">
+                                <img src="{{ site.baseurl }}/{{ our.avatar }}" class="img-circle" width="250">
                             </a>
                             <h3>{{ our.name }}</h3>
                             <p class="text-muted">{{ our.skills }}</p>

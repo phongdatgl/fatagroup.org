@@ -1,23 +1,23 @@
 - name:  Composer
-  image: /assets/img/icons-software/composer.png
+  image: assets/img/icons-software/composer.png
   link:  https://getcomposer.org
 
 - name:  Bower
-  image: /assets/img/icons-software/bower.png
+  image: assets/img/icons-software/bower.png
   link:  http://bower.io
 
 - name:  Gruntjs
-  image: /assets/img/icons-software/grunt.png
+  image: assets/img/icons-software/grunt.png
   link:  http://gruntjs.com
 
 - name:  Yeoman
-  image: /assets/img/icons-software/yeoman.png
+  image: assets/img/icons-software/yeoman.png
   link:  http://yeoman.io
 
 - name:  Google Chrome
-  image: /assets/img/icons-software/chrome.png
+  image: assets/img/icons-software/chrome.png
   link:  http://chrome.com
 
 - name:  Mozilla Firefox
-  image: /assets/img/icons-software/firefox.png
+  image: assets/img/icons-software/firefox.png
   link:  http://firefox.com
