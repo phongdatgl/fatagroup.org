@@ -132,22 +132,21 @@ title: Thiết kế website chuyên nghiệp
 
             <div class="section-content">
                 <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-ride="carousel">
-                    {% assign array = "0,1,2,3,4,5,6" | split: "," %}
                     <ol class="carousel-indicators">
-                        {% for i in array %}
-                            <li data-target="#testimonials-carousel" data-slide-to="{{ i }}" class="{% if i == "0" %} active {% endif %}">
-                                <img src="http://placehold.it/85x85">
+						{% for cus in site.data.customer %}
+                            <li data-target="#testimonials-carousel" data-slide-to="{{ cus.id }}" class="{% if cus.id == 0 %} active {% endif %}">
+                                <img src="{{ cus.avatar }}">
                             </li>
-                        {% endfor %}
+						{% endfor %}
                     </ol>
 
                     <div class="carousel-inner">
-                        {% for _k in array %}
-                            <div class="item {% if _k == "0" %} active {% endif %}">
-                                <p>Everything Is Awesome!!!</p>
-                                <strong>someone@email.com</strong>
+						{% for cus in site.data.customer %}
+                            <div class="item {% if cus.id == 0 %} active {% endif %}">
+                                <p>{{cus.comment}}</p>
+                                <strong>{{cus.name}} - {{cus.company}}</strong>
                             </div>
-                        {% endfor %}
+						{% endfor %}
                     </div>
                 </div>
 
