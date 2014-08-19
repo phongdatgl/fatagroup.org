@@ -1,0 +1,21 @@
+{
+  "name": "fatagroup.github.io",
+  "description": "Fatagroup website.",
+  "authors": [
+    "anhskohbo <anhskohbo@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "magnific-popup": "~0.9.9",
+    "owl.carousel": "*",
+    "fontawesome": "~4.1.0",
+    "bootstrap": "~3.2.0"
+  }
+}

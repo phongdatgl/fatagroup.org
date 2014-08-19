@@ -1,0 +1,31 @@
+- name:     Nguyễn Văn Ánh
+  skills:   "PHP Developer, Website Designer"
+  avatar:   /assets/img/team/anhskohbo.jpg
+  website:  http://anhskohbo.com
+  github:   anhskohbo
+  facebook: anhskohbo
+  skype:    anhskohbo
+
+- name:     Tạ Tuấn Anh
+  skills:   "PHP Developer"
+  avatar:   /assets/img/team/theblackhacker.jpg
+  website:  "#"
+  github:   TheBlackHacker
+  facebook: imyuta42
+  skype:    no_1412
+
+- name:     Nguyễn Văn Đạt
+  skills:   "PHP Developer, SEOmer"
+  avatar:   /assets/img/team/phongdatgl.jpg
+  website:  http://phongdatgl.biz
+  github:   phongdatgl
+  facebook: phongdatgl.1990
+  skype:    phongdatgl1
+
+- name:     Nguyễn Nhật Kha
+  skills:   "PHP Developer"
+  website:  "#"
+  avatar:   /assets/img/team/no-avatar.jpg
+  github:   nhatkhanguyen92
+  facebook:
+  skype:    nhatkhanguyen92

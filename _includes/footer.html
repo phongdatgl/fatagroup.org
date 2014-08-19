@@ -1,0 +1,54 @@
+<div class="container">
+    <p class="text-muted">Copyright &copy; 2014 Fatagroup. All rights reserved.</p>
+    <ul class="social-links">
+
+        {% if site.owner.github %}
+        <li class="github">
+            <a href="https://www.github.com/{{ site.owner.github }}" title="Skype" data-toogle="tooltip">
+                <i class="fa fa-github"></i>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.owner.facebook %}
+        <li class="facebook">
+            <a href="https://www.facebook.com/{{ site.owner.facebook }}" title="Facebook" data-toogle="tooltip">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.owner.twitter %}
+        <li class="twitter">
+            <a href="https://twitter.com/{{ site.owner.twitter }}" title="Twitter" data-toogle="tooltip">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.owner.google_plus %}
+        <li class="google-plus">
+            <a href="https://plus.google.com/{{ site.owner.google_plus }}" title="Google Plus" data-toogle="tooltip">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.owner.email %}
+        <li class="">
+            <a href="mailto:{{ site.owner.email }}" title="Email" data-toogle="tooltip">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if site.owner.skype %}
+        <li class="skype">
+            <a href="skype:{{ site.owner.skype }}" title="Skype" data-toogle="tooltip">
+                <i class="fa fa-skype"></i>
+            </a>
+        </li>
+        {% endif %}
+
+    </ul>
+</div>

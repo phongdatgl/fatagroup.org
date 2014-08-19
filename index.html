@@ -1,0 +1,295 @@
+---
+layout: home
+title: Thiết kế website chuyên nghiệp
+---
+
+<main class="site-main">
+    <section class="section section-inverse section-hero" id="section-hero">
+        <div class="container">
+            <header class="section-header">
+                <div class="site-logo">
+                    <a href="/" title="{{ site.title }}">
+                        <img src="/assets/img/logo.png">
+                    </a>
+                </div>
+
+                <h1 class="section-title">
+                    Hello we are Fatagroup
+                    <br>
+                    We do amazing things everyday
+                </h1>
+            </header>
+
+            <div class="section-content">
+                <div class="cta row">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                        <a href="#section-team" class="btn btn-lg btn-block btn-danger btn-rounded smooth-scroll" id="more-projects">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+                <div class="scroll-button hidden-md">
+                    <div class="mouse">
+                        <a href="#section-portfolio" class="smooth-scroll" title="Cuộn tiếp">
+                            <img src="assets/img/mouse.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-portfolio" id="section-portfolio">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Chúng tôi làm những gì?</h2>
+                <div class="section-description">
+                    Tham khảo công việc chúng tôi làm mỗi ngày nhé!
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="row">
+                    {% assign array = "1,2,3,4,5,6,7,8" | split: "," %}
+                    {% for i in array %}
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="project">
+                            <a href="/assets/img/projects/your-project.jpg" class="project-thumbnail">
+                                <img src="/assets/img/projects/your-project.jpg">
+                                <i class="fa fa-plus-circle"></i>
+                            </a>
+                            <h3 class="project-title">
+                                <a href="#" title="Your project">Your project</a>
+                            </h3>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-inverse section-features" id="section-team">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Tại sao nên chọn chúng tôi?</h2>
+                <div class="section-description">
+                    <p>Tất cả những gì bạn muốn có cho website của bạn, chúng tôi đều có thể cung cấp!</p>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="/assets/img/icons/best.png">
+                        <h3>Chất lượng đẳng cấp quốc tế</h3>
+                        <p>Chúng tôi luôn áp dụng những công nghệ và tiểu chuẩn web mới nhất cho những dự án của mình.</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <img src="/assets/img/icons/money.png">
+                        <h3>Giá cả hợp lý</h3>
+                        <p>Chúng tôi không tính bằng đô la đâu! Bạn có thể thương lượng trước với chúng tôi về giá cả.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <img src="/assets/img/icons/support.png">
+                        <h3>Hỗ trợ 24/7</h3>
+                        <p>Ngay cả khi dự án đã hoàn thành, chúng tôi sẵn sàng hỗ trợ những thắc mắc và giải quyết những vấn đề cho bạn.</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <img src="/assets/img/icons/clock.png">
+                        <h3>Luôn đúng hạn</h3>
+                        <p>
+                            Bạn muốn có một website vào ngày thứ 2? Chúng tôi sẽ hoàn thành xong cho bạn vào ngày chủ nhật trước đó.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <img src="/assets/img/icons/light.png">
+                        <h3>Đội ngũ sáng tạo</h3>
+                        <p>
+                            Những nhân viên của chúng tôi có một kiến thức chuyên sâu về lập trình và mạng. Hơn nữa, chúng tôi luôn đề cao sự sáng tạo.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <img src="/assets/img/icons/clipboard.png">
+                        <h3>Quản lý tiến độ</h3>
+                        <p>
+                            Bạn hoàn toàn có thể tham gia giám sát tiến độ công việc mọi lúc, mọi nơi thông qua chiếc smartphone hay máy tính cá nhân.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-testimonial" id="section-testimonial">
+        <div class="container">
+
+            <header class="section-header">
+                <h2 class="section-title">Họ nói gì</h2>
+            </header>
+
+            <div class="section-content">
+                <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-ride="carousel">
+                    {% assign array = "0,1,2,3,4,5,6" | split: "," %}
+                    <ol class="carousel-indicators">
+                        {% for i in array %}
+                            <li data-target="#testimonials-carousel" data-slide-to="{{ i }}" class="{% if i == "0" %} active {% endif %}">
+                                <img src="http://placehold.it/85x85">
+                            </li>
+                        {% endfor %}
+                    </ol>
+
+                    <div class="carousel-inner">
+                        {% for _k in array %}
+                            <div class="item {% if _k == "0" %} active {% endif %}">
+                                <p>Everything Is Awesome!!!</p>
+                                <strong>someone@email.com</strong>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="banners">
+
+                    <div class="section-header">
+                        <h2 class="section-title">Công nghệ sử dụng</h2>
+                        <div class="section-description">
+                            <p>Chúng tôi luôn sử dụng công nghệ, phần mềm tiên tiến nhất cho việc lập trình, phát triển, duy trì... các dự án của mình.</p>
+                        </div>
+                    </div>
+
+                    <div class="owl-carousel-banners">
+                        {% for soft in site.data.software %}
+                            <div class="banner-item">
+                                <a href="{{ soft.link }}" title="{{ soft.name }}">
+                                    <img src="{{ soft.image }}" alt="{{ soft.name }}">
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-inverse section-skills" id="skills">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Kỹ năng</h2>
+                <div class="section-description">
+                    <p>Với những kỹ năng luôn được trau dồi từng ngày của mình, chúng tôi tự tin sẽ làm ra những sản phẩm chất lượng nhất cho khách hàng.</p>
+                </div>
+            </header>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        {% for item in site.data.skills limit:3 offset:0 %}
+                            {% include home-skill-item.html item=item %}
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        {% for item in site.data.skills limit:3 offset:3 %}
+                            {% include home-skill-item.html item=item %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-team" id="section-team">
+        <div class="container">
+
+            <header class="section-header">
+                <h2 class="section-title">Team</h2>
+                <div class="section-description">
+                    <p>Đội ngũ chúng tôi gồm những thành viên trẻ, năng động và nhiệt huyết với công việc. Chúng tôi luôn nỗ lực hết mình để đem đến cho khách hàng những sản phẩm chất lượng nhất.</p>
+                </div>
+            </header>
+
+            <div class="section-content">
+                <div class="clearfix owl-carousel-team">
+                    {% for our in site.data.team %}
+                        <div class="owl-carousel-team-item">
+                            <a class="team-avatar" href="{{ our.website }}" target="_blank">
+                                <img src="{{ our.avatar }}" class="img-circle" width="250">
+                            </a>
+                            <h3>{{ our.name }}</h3>
+                            <p class="text-muted">{{ our.skills }}</p>
+                            <ul class="social-links">
+                               <li class="skype">
+                                    <a href="skype:{{ our.skype }}" data-toogle="tooltip" title="{{ our.skype }}">
+                                        <i class="fa fa-skype"></i>
+                                    </a>
+                                </li>
+                                <li class="facebook">
+                                    <a href="https://facebook.com/{{ our.facebook }}" data-toogle="tooltip" title="{{ our.facebook }}" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="github">
+                                    <a href="https://github.com/{{ our.github }}" data-toogle="tooltip" title="@{{ our.github }}" target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-inverse section-contact" id="section-contact">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Liên hệ</h2>
+                <div class="section-description">
+                    <p>Bạn muốn biết công ty của bạn có thực sự cần một website? Đừng ngại gửi câu hỏi về cho chúng tôi.</p>
+                </div>
+            </header>
+            <div class="section-content">
+                <form method="post" action="https://docs.google.com/forms/d/12TkcXido52bsN4Ln6bkVYlUX6WiCjq1ButYJwIZlBl4/formResponse" name="contactform" id="contactform">
+                    <div class="results" style="display: none">
+                        <div role="alert" class="alert alert-success fade in">
+                            <button data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                            <strong>Thank you!</strong> Rất trân trọng thời gian quý báu bạn dành cho chúng tôi. Chúng tôi sẽ xét duyệt và liên hệ lại với bạn sớm thôi.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="sr-only">Nội dung</label>
+                                <textarea name="entry.1544660022" class="form-control" placeholder="Nội dung..." style="height: 181px" rows="6" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="sr-only">Họ tên</label>
+                                <input name="entry.1342533052" type="text" class="form-control input-lg" placeholder="Họ tên" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only">Địa chỉ Email</label>
+                                <input name="entry_718738138" type="email" class="form-control input-lg" placeholder="Địa chỉ Email" required>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-9 col-xs-12">
+                                        <label class="sr-only">Số điện thoại</label>
+                                        <input name="entry.791704842" type="text" class="form-control input-lg" placeholder="Số điện thoại">
+                                    </div>
+                                    <div class="col-sm-3 col-xs-12">
+                                        <button id="submit" type="submit" class="btn btn-danger btn-lg btn-block">Gửi</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

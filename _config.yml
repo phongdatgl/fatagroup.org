@@ -1,0 +1,25 @@
+title:            FataGroup
+description:      Thiết kế website chuyên nghiệp
+url:              http://fatagroup.org
+
+owner:
+  skype:          anhskohbo
+  email:          fatagroup@gmail.com
+  twitter:
+  facebook:       pages/FataGroup/1458892874395147
+  github:         fatagroup
+  google_plus:
+
+google_analytics:
+google_verify:
+bing_verify:
+
+timezone:         Asia/Saigon
+future:           true
+highlighter:      pygments
+markdown:         kramdown
+
+permalink:        pretty
+paginate:         10
+
+exclude:          ["README.md", "LICENSE", "assets/less", "gulpfile.js", "package.json", "bower.json", "node_modules", "bower_components"]

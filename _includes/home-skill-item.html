@@ -1,0 +1,8 @@
+<div class="skill-item">
+    <h3>{{ include.item.name }} <small>({{ include.item.percent }}%)</small></h3>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{ item.percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ item.percent }}%;">
+            <span class="sr-only">{{ include.item.percent }}%</span>
+        </div>
+    </div>
+</div>

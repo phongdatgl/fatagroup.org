@@ -1,0 +1,17 @@
+- name:    "PHP + Mysql"
+  percent: 95
+
+- name:    "HTML5 + CSS3"
+  percent: 85
+
+- name:    "Javascript (with NodeJS)"
+  percent: 65
+
+- name:    "Teamwork"
+  percent: 95
+
+- name:    "Design"
+  percent: 80
+
+- name:    "SEO"
+  percent: 75
